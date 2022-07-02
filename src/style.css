@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* ------------- MIXIN ------------- */
+/* ------------- VARIABLES ------------- */
+body {
+  background-color: #272727;
+  color: white;
+  font-family: Montserrat;
+  margin: 30px 250px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.profile, .description, .skill, .projects, .experiences, .education {
+  margin: 100px 0px;
+}
+
+/* ------------ IMG && ICON && TEXT ----------- */
+.quot {
+  width: 140px;
+}
+
+h3 {
+  color: #7344F8;
+  margin-bottom: 30px;
+}
+
+/* ---------- PROFIL && DESCRIPTION ---------- */
+.profile {
+  display: flex;
+  justify-content: space-evenly;
+}
+.profile .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile h1 {
+  letter-spacing: 0.245em;
+}
+
+.description, h3, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  background-image: url("static/icons/quot.png");
+  background-repeat: no-repeat;
+}
+.description p {
+  margin: 10px;
+}
+
+/* ------------- COMPÉTENCES ------------- */
+.skill .title-back-end {
+  display: flex;
+  gap: 10px;
+}
+.skill .title-back-end img {
+  width: 25px;
+  height: 30px;
+}
+.skill .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.skill .skills-container p {
+  background-color: #3F3F3F;
+  color: #3DC0C9;
+  text-transform: capitalize;
+  padding: 5px;
+  border-radius: 6px;
+  border: solid 1px #3DC0C9;
+}
+.skill .skills-container p.uppercase {
+  text-transform: uppercase;
+}
+.skill .back-end {
+  display: flex;
+  margin-bottom: 50px;
+}
+.skill .back-end .DB {
+  margin-top: 60px;
+}
+.skill .back-end .python-DB, .skill .back-end .django {
+  width: 50%;
+}
+.skill .front-end {
+  display: flex;
+}
+.skill .front-end .html-css, .skill .front-end .js {
+  width: 50%;
+}
+
+/* ------------- PROJETS ------------- */
+.projects {
+  text-align: center;
+}
+.projects .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.projects .cards .card {
+  max-width: 330px;
+  background-color: white;
+}
+.projects .cards .card .img-container {
+  width: 100%;
+}
+.projects .cards .card .img-container img {
+  width: 100%;
+}
+.projects .cards .card .text-container {
+  padding: 5px 10px 30px;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+}
+.projects .cards .card .text-container h5 {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 5px;
+}
+
+/* ------------- EXPÉRIENCES && FORMATIONS ------------- */
+.experience-container, .education-container {
+  margin: 25px 0;
+}
+.experience-container p, .education-container p {
+  margin: 2px 0;
+}
+.experience-container p:first-child, .education-container p:first-child {
+  font-weight: 700;
+}
+.experience-container p:nth-child(2), .education-container p:nth-child(2) {
+  font-style: italic;
+}
+.experience-container p span, .education-container p span {
+  color: #3DC0C9;
+  font-style: italic;
+}
+
+/* ------------- FOOTER ------------- */
+footer .icons {
+  display: flex;
+  gap: 30px;
+  margin: 20px;
+}/*# sourceMappingURL=style.css.map */

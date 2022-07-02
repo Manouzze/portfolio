@@ -1,0 +1,188 @@
+/* ------------- MIXIN ------------- */
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------- VARIABLES ------------- */
+$purple : #7344F8;
+$orange : #FF981F;
+$blue : #3DC0C9;
+
+
+body{
+  background-color: #272727;
+  color:white;
+  font-family: Montserrat;
+  margin: 30px 250px
+}
+
+header{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.profile, .description, .skill, .projects, .experiences, .education{
+  margin: 100px 0px;
+}
+
+/* ------------ IMG && ICON && TEXT ----------- */
+
+.quot{
+  width: 140px;
+}
+
+h3{
+  color:$purple; 
+  margin-bottom: 30px;
+}
+
+
+/* ---------- PROFIL && DESCRIPTION ---------- */
+
+.profile{
+  display:flex;
+  justify-content: space-evenly;
+
+  .name{
+    @include flex-column;
+  }
+  h1{
+    letter-spacing: 0.245em;
+  }
+}
+
+.description, h3, footer{
+  @include flex-column;
+}
+
+.description{
+  p{
+    margin: 10px;
+  }
+  background-image: url("static/icons/quot.png");
+  background-repeat: no-repeat;
+}
+
+
+/* ------------- COMPÉTENCES ------------- */
+
+.skill{
+
+  .title-back-end{
+    display: flex;
+    gap: 10px;
+    img{
+      width: 25px;
+      height: 30px;
+    }
+  }
+
+  .skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    p{
+      background-color: #3F3F3F;
+      color: $blue;
+      text-transform: capitalize;
+      padding: 5px;
+      border-radius:6px;
+      border:solid 1px $blue;
+      &.uppercase{
+        text-transform: uppercase;
+      }
+    }
+  }
+
+
+  .back-end{
+    display: flex;
+    margin-bottom: 50px;
+    .DB{
+      margin-top: 60px;
+    }
+    .python-DB, .django{
+      width: 50%;
+    }
+  }
+  
+  .front-end{
+    display: flex;
+    .html-css, .js{
+      width: 50%;
+    }
+  }
+}
+
+
+/* ------------- PROJETS ------------- */
+.projects{
+  text-align: center;
+
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    .card{
+      max-width:330px;
+      background-color: #ffff;
+      
+      .img-container{
+        width:100%;
+        img{
+          width:100%;
+        }
+      }
+      
+      .text-container{
+        padding:5px 10px 30px;
+        color: #000000;
+        text-align: left;
+        font-size: 16px;
+        h5{
+          font-weight: 700;
+          font-size:24px;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* ------------- EXPÉRIENCES && FORMATIONS ------------- */
+
+
+.experience-container, .education-container{
+  margin:25px 0;
+  p{
+    margin:2px 0;
+    &:first-child{
+      font-weight: 700;
+    }
+    &:nth-child(2){
+      font-style: italic;
+    }
+    span{
+      color:$blue;
+      font-style: italic;
+    }
+  }
+}
+
+
+
+/* ------------- FOOTER ------------- */
+
+footer{
+  .icons{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+  }
+}
