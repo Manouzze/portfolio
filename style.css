@@ -9,6 +9,11 @@ p {
   font-size: 14px;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 body {
   background-color: #272727;
   color: white;
@@ -26,7 +31,7 @@ header {
 }
 
 .profile, .description, .skill, .projects, .experiences, .education {
-  margin: 50px 0;
+  margin: 60px 0;
 }
 
 /* ------------ IMG && ICON && TEXT ----------- */
@@ -163,6 +168,11 @@ h3 {
 .experience-container p span, .education-container p span {
   color: #3DC0C9;
   font-style: italic;
+}
+.experience-container .website, .education-container .website {
+  font-size: 14px;
+  font-style: italic;
+  color: #3DC0C9;
 }
 
 /* ------------- FOOTER ------------- */
