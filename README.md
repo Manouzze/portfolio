@@ -1,6 +1,6 @@
 # Portfolio 📖
 
-Site retraçant mon expériences, mes projets, ainsi que mes formations.
+Site retraçant mes expériences, mes projets, ainsi que mes formations.
 
 ## Stack utilisées :
 > SASS
