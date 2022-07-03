@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Voici un exemple de description" />
   <link rel="stylesheet" href="style.css">
   <title>MANON THIEBAUT</title>
@@ -18,7 +19,9 @@
 <body>
 
   <div class="profile">
-    <img src="static/images/profile.png" alt="profile">
+    <figure>
+      <img src="static/images/profile.png" alt="profile">
+    </figure>
     <div class="name">
       <h1>MANON THIEBAUT</h1>
       <p>Etudiante en Développement</p>
@@ -39,27 +42,31 @@
     <h3>COMPÉTENCES</h3>
     <div class="title-back-end">
       <h4>BACK-END</h4>
-      <img src="static/icons/heart.png" alt="heart">
+      <figure>
+        <img src="static/icons/heart.png" alt="heart">
+      </figure>
     </div>
     <div class="back-end">
-      <div class="python-DB">
+      <div class="python-DB global-skill-container">
         <div>
           <p><strong>Python</strong></p>
           <p>Concepts, bases et méthodes Python.</p>
           <p>Création et gestion d’environnements virtuels.</p>
           <p>Programmation orientée object.</p>
           <p>Création d’application : calculatrice, to do list, trieur de fichiers,  convertisseur de devises, minis jeux en ligne de commande, bot Discord ...</p>
-        </div>
-        <div class="skills-container">
-          <p>PyCharm</p>
-          <p>POO</p>
-          <p>qtwidgets</p>
-          <p>PATH</p>
-          <p>tinydb</p>
+          <div class="skills-container">
+            <p>PyCharm</p>
+            <p>POO</p>
+            <p>qtwidgets</p>
+            <p>PATH</p>
+            <p>tinydb</p>
+          </div>
         </div>
         
-        <div class="DB">
-          <p><strong>Bases de données</strong></p>
+        <div>
+
+          <div class="DB global-skill-container">
+            <p><strong>Bases de données</strong></p>
           <p>Connaissances des requètes SQL (CRUD)</p>
           <p>Schématisation de base de données : Diagrames  MCD, MLD, MPD.</p>
           
@@ -74,8 +81,9 @@
           <p>merise</p>
         </div>
       </div>
+    </div>
       
-      <div class="django">
+      <div class="django global-skill-container">
         <div>
           <p><strong>Django</strong></p>
           <p>Connaissances sur la structure MVT du framework (Models, Views, Templates).</p>
@@ -104,7 +112,7 @@
     <h4>FRONT-END</h4>
     <div class="front-end">
 
-      <div class="js">
+      <div class="js global-skill-container">
         <div>
           <p><strong>Javascript</strong></p>
           <p>Connaissance des normes ES6 (let, fonctions fléchées ...).</p>
@@ -119,7 +127,7 @@
         </div>
       </div>
 
-      <div class="html-css">
+      <div class="html-css global-skill-container">
         <div>
           <p><strong>HTML && CSS</strong></p>
           <p>Connaissance des bonnes pratiques SEO (balises méta, utilisation des balises adaptées ...)</p>
@@ -157,26 +165,29 @@
         <div class="text-container">
           <h5>E-commerce de pierres fines et précieuses</h5>
           <p>Création d’un site de vente en ligne de gemmes. Chaque produit dispose de plusieurs variations. </p>
+          <a href="https://github.com/Manouzze/Gems_Shop">Voir le projet →</a>
         </div>
       </div>
-
+      
       <div class="card">
         <div class="img-container">
           <img src="static/images/cards_ecommerce.png" alt="Image de couverture de projet ecommerce">
         </div>
         <div class="text-container">
-          <h5>E-commerce de pierres fines et précieuses</h5>
+          <h5>Application Météo</h5>
           <p>Création d’un site de vente en ligne de gemmes. Chaque produit dispose de plusieurs variations. </p>
+          <a href="https://github.com/Manouzze/AppMeteo">Voir le projet →</a>
         </div>
       </div>
-
+      
       <div class="card">
         <div class="img-container">
           <img src="static/images/cards_ecommerce.png" alt="Image de couverture de projet ecommerce">
         </div>
         <div class="text-container">
-          <h5>E-commerce de pierres fines et précieuses</h5>
+          <h5>Site vitrine d'une association fictive</h5>
           <p>Création d’un site de vente en ligne de gemmes. Chaque produit dispose de plusieurs variations. </p>
+          <a href="https://manouzze.github.io/canard-asso/index.html">Voir le projet →</a>
         </div>
       </div>
 

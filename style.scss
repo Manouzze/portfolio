@@ -11,29 +11,36 @@ $purple : #7344F8;
 $orange : #FF981F;
 $blue : #3DC0C9;
 
+img{
+  width:100%;
+}
+
+p{
+  font-size:14px;
+}
+
 
 body{
   background-color: #272727;
   color:white;
   font-family: Montserrat;
-  margin: 30px 350px
+  max-width:1000px;
+  margin:0 auto;
+  padding:20px 50px;
 }
 
 header{
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .profile, .description, .skill, .projects, .experiences, .education{
-  margin: 100px 0px;
+  margin: 50px 0;
 }
 
 /* ------------ IMG && ICON && TEXT ----------- */
-
-.quot{
-  width: 140px;
-}
 
 h3{
   color:$purple; 
@@ -45,13 +52,24 @@ h3{
 
 .profile{
   display:flex;
-  justify-content: space-evenly;
 
   .name{
-    @include flex-column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex:1;
+    font-size:14px;
+    h1{
+      font-size:24px;
+      letter-spacing: 0.245em;
+    }
+    p{
+      margin:10px 0 0;
+    }
   }
-  h1{
-    letter-spacing: 0.245em;
+  figure{
+    max-width:250px;
+    flex:1;
   }
 }
 
@@ -65,6 +83,7 @@ h3{
   }
   background-image: url("static/icons/quot.png");
   background-repeat: no-repeat;
+  background-size: 8%;
 }
 
 
@@ -74,10 +93,10 @@ h3{
 
   .title-back-end{
     display: flex;
-    gap: 10px;
-    img{
-      width: 25px;
-      height: 30px;
+    align-items: center;
+    figure{
+      max-width:18px;
+      margin:0 0 0 7px;
     }
   }
 
@@ -93,6 +112,7 @@ h3{
       padding: 5px;
       border-radius:6px;
       border:solid 1px $blue;
+      margin:0;
       &.uppercase{
         text-transform: uppercase;
       }
@@ -100,21 +120,12 @@ h3{
   }
 
 
-  .back-end{
+  .back-end, .front-end{
     display: flex;
     margin-bottom: 50px;
-    .DB{
-      margin-top: 60px;
-    }
-    .python-DB, .django{
-      width: 50%;
-    }
-  }
-  
-  .front-end{
-    display: flex;
-    .html-css, .js{
-      width: 50%;
+    gap:50px;
+    .python-DB, .django, .html-css, .js{
+      flex:1;
     }
   }
 }
@@ -127,11 +138,14 @@ h3{
   .cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:20px;
     
     .card{
-      max-width:330px;
+      margin-top:30px;
+      max-width:280px;
       background-color: #ffff;
+      box-shadow: 0px 0px 8px 0px #000000;
       
       .img-container{
         width:100%;
@@ -144,11 +158,15 @@ h3{
         padding:5px 10px 30px;
         color: #000000;
         text-align: left;
-        font-size: 16px;
+        font-size: 14px;
         h5{
           font-weight: 700;
-          font-size:24px;
+          font-size:16px;
           margin: 5px;
+        }
+        a{
+          text-decoration: underline;
+          color:#000000;
         }
       }
     }
@@ -184,5 +202,28 @@ footer{
     display: flex;
     gap: 30px;
     margin: 20px;
+  }
+}
+
+@media screen and (max-width:700px){
+  .skill{
+    .back-end, .front-end{
+      flex-direction: column;
+    }
+  } 
+}
+
+@media screen and (max-width:500px){
+  body{
+    padding:20px;
+  }
+  .profile {
+    flex-direction: column;
+    .name {
+      text-align: center;
+      h1{
+        font-size: 18px;
+      }
+    }
   }
 }
