@@ -14,6 +14,11 @@ a {
   color: #ffffff;
 }
 
+.email, .state {
+  color: #3DC0C9;
+  font-style: italic;
+}
+
 body {
   background-color: #272727;
   color: white;
@@ -182,6 +187,7 @@ footer .icons {
   margin: 20px;
 }
 
+/* ------------- media queries ------------- */
 @media screen and (max-width: 700px) {
   .skill .back-end, .skill .front-end {
     flex-direction: column;
