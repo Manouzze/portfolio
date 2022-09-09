@@ -4,41 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Manon Thiebaut | Développeuse web" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
   <title>MANON THIEBAUT</title>
 </head>
 
-<header>
-  <a href="#skill">Compétences</a>
-  <a href="#projects">Projets</a>
-  <a href="#experiences">Expériences</a>
-  <a href="#education">Formations</a>
-</header>
-
-
 <body>
 
-  <div class="profile">
-    <figure>
-      <img src="static/images/profile.png" alt="profile">
-    </figure>
-    <div class="name">
-      <h1>MANON THIEBAUT</h1>
-      <p>Etudiante en Développement</p>
-      <p>(Bachelor Développeur Concepteur d’Applications)</p>
+<div class="container-background">
+  
+      <header>
+        <a href="#skill">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#education">Formations</a>
+      </header>
+
+  <div class="block-right">
+
+    <div class="profile">
+      <div class="name">
+        <h1>MANON THIEBAUT</h1>
+        <p>Étudiante en Développement</p>
+        <p>(Bachelor Développeur Concepteur d’Applications)</p>
+      </div>
+      <div class="description">
+
+        <p>Anciennement Joaillière et Gemmologue, j’ai entamé une reconversion de devenir développeuse.</p>
+        <p>J’ai commencé une formation ' Développeur full stack web et web mobile '.<br>
+          Je suis actuellement entrain de poursuivre ma formation en Bachelor concepteur développeur d’application.</p>
+        <p class="current-topic">🤖 Les sujets que je souhaite apprendre prochainement :</p>
+        <p>Flutter, NodeJS, Docker, Réseaux </p>
+        <p class="email">manoon.thiebaut@gmail.com </p>
+      </div>
+    </div>
+    <div class="icons-stack">
+      <img src="static/icons/python.png" alt="python">
+      <img src="static/icons/django.png" alt="django">
+      <img src="static/icons/node.png" alt="node.js">
+      <img src="static/icons/express.png" alt="express.js">
     </div>
   </div>
 
+</div>
 
-  <div class="description">
-    <p>Passionée depuis toujours par le milieu informatique et anciennement Joaillière et Gemmologue, j’ai entamé une reconversion il y a quelques mois dans le but de devenir développeuse.</p>
-    <p>J’ai commencé en 2022 une formation de développeur full stack web et web mobile, et je suis actuellement entrain de poursuivre ma formation avec un bachelor concepteur développeur d’application.</p>
-    <p>🤖 Les sujets qui me démangent et que je souhaite apprendre prochainement :</p>
-    <p>Flutter, NodeJS, Docker, Réseaux </p>
-    <p class="email">manoon.thiebaut@gmail.com </p>
-  </div>
+<div class="container-content">
 
-
+  
   <div class="skill" id="skill">
     <h3>COMPÉTENCES</h3>
     <div class="title-back-end">
@@ -50,54 +64,50 @@
     <div class="back-end">
       <div class="python-DB global-skill-container">
         <div>
-          <p><strong>Python</strong></p>
-          <p>Concepts, bases et méthodes Python.</p>
-          <p>Création et gestion d’environnements virtuels.</p>
-          <p>Programmation orientée object.</p>
-          <p>Création d’application : calculatrice, to do list, trieur de fichiers,  convertisseur de devises, minis jeux en ligne de commande, bot Discord ...</p>
+          <p><strong>Node.JS</strong><span> (en cours)</span></p>
+          <p>Authentification</p>
+          <p>Gestion des rôles/permissions,</p>
+          <p>Envoi de mail : Inscription par mail/mdp oublié, </p>
+          <p>Paiement (Stripe)</p>
+          <p>Sécurité</p>
+          <p>Tests unitaires</p>
           <div class="skills-container">
-            <p>PyCharm</p>
-            <p>POO</p>
-            <p>qtwidgets</p>
-            <p>PATH</p>
-            <p>tinydb</p>
+            <p>MVC</p>
+            <p>Express</p>
+            <p>JWT</p>
+            <p>GraphQL</p>
           </div>
-        </div>
+        </div><br>
+
         
         <div>
-
+          
           <div class="DB global-skill-container">
             <p><strong>Bases de données</strong></p>
-          <p>Connaissances des requètes SQL (CRUD)</p>
-          <p>Schématisation de base de données : Diagrames  MCD, MLD, MPD.</p>
-          
-          <p>Gestion des clés primaires et étrangères.</p>
-        </div>
-        <div class="skills-container">
-          <p>postgresl</p>
-          <p>tableplus</p>
-          <p>mysql</p>
-          <p>workbench</p>
-          <p>sqlite</p>
-          <p>Diagramme UML</p>
-          <p>merise</p>
+            <p>Connaissances des requètes SQL (CRUD)</p>
+            <p>Schématisation de base de données : UML, MCD, MLD, MPD.</p>
+          </div>
+          <div class="skills-container">
+            <p>mongoDB<span>(en cours)</span></p>
+            <p>postgresl</p>
+            <p>mysql</p>
+            <p>workbench</p>
+            <p>sqlite</p>
+            <p>Diagramme UML</p>
+            <p>merise</p>
+          </div>
         </div>
       </div>
-    </div>
-      
+    
       <div class="django global-skill-container">
         <div>
-          <p><strong>Django</strong></p>
-          <p>Connaissances sur la structure MVT du framework (Models, Views, Templates).</p>
-          <p>Gestion des routes et views associées.</p>
-          <p>Organisation de l’admin Django.</p>
-          <p>Création de models d’authentification (AbstractBaseUser).</p>
+          <p clq><strong>Django</strong></p>
+          <p>Connaissances sur la structure MVT du framework.</p>
+          <p>Gestion des variables d’environnement.</p>
+          <p>Création de models d’authentification.</p>
           <p>Création de formulaires avec contraintes de validation.</p>
-          <p>Gestion des variables d’environnement dans un fichier .env.</p>
-          <p>Conception d’un e-commerce de vente de gemmes avec de nombreuses fonctionnalités : gestion des sessions/cookies, vérification des tokens, création de variations, mot de passe oublié, envoi d’email pour confirmer l’inscription du compte, gestion du panier ...</p>
-          <p>Gestion du projet sur Git (commit, pull, push, gitignore ...).</p>
+          <p>Conception d’un e-commerce avec de nombreuses fonctionnalités : gestion des sessions/cookies, vérification des tokens, création de variations, mot de passe oublié, envoi d’email pour confirmer l’inscription du compte, gestion du panier ...</p>
           <p>Déploiement sur PythonAnywhere.</p>
-          <p>Prochainement :  Gestion du responsive et fonctionnalités du compte.</p>
         </div>
         <div class="skills-container">
           <p class="uppercase">mvt</p>
@@ -106,15 +116,29 @@
           <p>git</p>
           <p>pythonAnywhere</p>
         </div>
+        <br>
+        <div>
+          <p><strong>Python</strong></p>
+          <p>Concepts, bases et méthodes Python.</p>
+          <p>Programmation orientée object.</p>
+          <p>Création d’application : convertisseur de devises, calculatrice, to do list, trieur de fichiers, minis jeux en ligne de commande, bot Discord ...</p>
+          <div class="skills-container">
+            <p>PyCharm</p>
+            <p>POO</p>
+            <p>qtwidgets</p>
+            <p>PATH</p>
+            <p>tinydb</p>
+          </div>
+        </div>
       </div>
-
-
+      
+      
     </div>
-
-
+    
+    
     <h4>FRONT-END</h4>
     <div class="front-end">
-
+      
       <div class="js global-skill-container">
         <div>
           <p><strong>Javascript</strong></p>
@@ -129,7 +153,7 @@
           <p class="uppercase">dom</p>
         </div>
       </div>
-
+      
       <div class="html-css global-skill-container">
         <div>
           <p><strong>HTML && CSS</strong></p>
@@ -145,160 +169,179 @@
           <p>media queries</p>
         </div>
       </div>
-
+      
     </div>
 
   </div>
 
-
+  
   <div class="projects" id="projects">
-
+    
     <h3>PROJETS</h3>
-
+    
     <p>Une petite sélection de projets que j’ai eu l’occasion de réaliser</p>
-
-
+    
+    
     <div class="cards">
+      
+      <div class="card">
+        
+        <div class="img-container">
+          <img src="static/images/node.jpg" alt="Image de couverture de projet ecommerce">
+        </div>
+        <div class="text-container">
+          <h5>Site Web <span> (en cours)</span></h5>
+          <p>Conception d'un site web utilisant Express et MongoDB</p>
+          <a target="_blank" href="https://github.com/Manouzze/Natours">Voir le projet →</a>
+        </div>
+      </div>
 
       <div class="card">
         <div class="img-container">
-          <img src="static/images/E-commercee.png" alt="Image de couverture de projet ecommerce">
+          <img src="static/images/fitnessclub.jpg" alt="Image de couverture de projet ecommerce">
+        </div>
+        <div class="text-container">
+          <h5>Dashboard</h5>
+          <p>FitnessClub est un projet mettant en place la réalisation d'un Dashboard.  </p>
+            <p>Accès au dashboard : README github</p>
+            <p><a target="_blank" href="http://manouzee.pythonanywhere.com/">Voir le projet hébergé →</a></p>
+            <p><a target="_blank" href="https://manouzze.github.io/canard-asso/index.html">Voir le projet git →</a></p>
+          </div>
         </div>
         
-        <div class="text-container">
-          <h5>E-commerce de pierres fines et précieuses</h5>
-          <p class="state">Déployé mais en cours de construction</p>
-          <p> Les prochaines étapes : gérer le responsive et ajouts des variations sur chaques produits. </p>
-          <a target="_blank" href="
-          https://manouzze.pythonanywhere.com">Voir le projet →</a>
+        <div class="card">
+          <div class="img-container">
+            <img src="static/images/E-commercee.png" alt="Image de couverture de projet ecommerce">
+          </div>
+          <div class="text-container">
+            <h5>E-commerce de pierres fines et précieuses</h5>
+            <p class="state">Déployé mais en cours de construction</p>
+            <p> Les prochaines étapes : gérer le responsive et ajouts des variations sur chaques produits. </p>
+            <p><a target="_blank" href="https://manouzze.pythonanywhere.com/shop/">Voir le projet hébergé →</a></p>
+            <p><a target="_blank" href="https://manouzze.pythonanywhere.com">Voir le projet git →</a></p>
+          </div>
         </div>
-      </div>
-      
-      <div class="card">
+        
+        
+        <div class="card">
+          <div class="img-container">
+            <img src="static/images/app_meteoo.png " alt="Image de couverture de projet ecommerce">
+          </div>
+          <div class="text-container">
+            <h5>Application Météo</h5>
+            <p>Application météo et utilisation d'API </p>
+            <p><a target="_blank" href="https://github.com/Manouzze/AppMeteo">Voir le projet →</a></p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="img-container">
+            <img src="static/images/convertisseur de devisee.png" alt="Image de couverture de projet ecommerce">
+          </div>
+          <div class="text-container">
+            <h5>Convertisseur de devise</h5>
+            <p>Application de bureau servant à convertir des devises grâce à une API </p>
+            <p><a target="_blank" href="https://github.com/Manouzze/Currency_converter">Voir le projet →</a></p>
+          </div>
+        </div>
+        <div class="card">
         <div class="img-container">
-          <img src="static/images/app_meteo.png" alt="Image de couverture de projet ecommerce">
-        </div>
-        <div class="text-container">
-          <h5>Application Météo</h5>
-          <p>Application météo et utilisation d'API </p>
-          <a target="_blank" href="https://github.com/Manouzze/AppMeteo">Voir le projet →</a>
-        </div>
-      </div>
-      
-      <div class="card">
-        <div class="img-container">
-          <img src="static/images/canard-assoo.png" alt="Image de couverture de projet ecommerce">
-        </div>
-        <div class="text-container">
-          <h5>Site vitrine d'une association fictive</h5>
-          <p>Page Evenement cliquable </p>
-          <a target="_blank" href="https://manouzze.github.io/canard-asso/index.html">Voir le projet →</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="img-container">
-          <img src="static/images/convertisseur de devise.JPG" alt="Image de couverture de projet ecommerce">
-        </div>
-        <div class="text-container">
-          <h5>Convertisseur de devise</h5>
-          <p>Application de bureau servant à convertir des devises grâce à une API </p>
-          <a target="_blank" href="https://github.com/Manouzze/Currency_converter">Voir le projet →</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="img-container">
-          <img src="static/images/CineClub.JPG" alt="Image de couverture de projet ecommerce">
+          <img src="static/images/CineClubb.png" alt="Image de couverture de projet ecommerce">
         </div>
         <div class="text-container">
           <h5>ciné_Club</h5>
           <p>Application de bureau représentant une todo-list version cinéma</p>
-          <a target="_blank" href="https://github.com/Manouzze/Cine_Club">Voir le projet →</a>
+          <p><a target="_blank" href="https://github.com/Manouzze/Cine_Club">Voir le projet →</a></p>
         </div>
       </div>
   
-
+      
     </div>
 
   </div>
 
+  <div class="container-education-experiences">
+
+    
+    <div class="education" id="education">
+
+      <h3>FORMATIONS</h3>
+      <div class="education-container">
+        <p>Bac +3 - Concepteur Développeur d’Applications <span>(en cours)</span></p>
+        <p>2023  • CESI</p>
+      </div>
+      
+      <div class="education-container">
+        <p>Bac +2 - Développeur Full stack Web et Web Mobile <span>(en cours)</span></p>
+        <p>2022 - 2023  • Digital Campus Live</p>
+      </div>
+      
+      <div class="education-container">
+        <p>Licence - Diplôme universitaire de Gemmologie de Laboratoire</p>
+        <p>2016 - 2017  • Université de Nantes</p>
+      </div>
+      
+      <div class="education-container">
+        <p>BTS - Diplôme de Gemmologue</p>
+        <p>2016 - 2017  • Institut National de Gemmologie (ING) - Lyon</p>
+      </div>
+      
+      <div class="education-container">
+        <p>Formation de Sertissage</p>
+        <p>2016 - 2017  • Ecole du Louvre - Paris</p>
+      </div>
+      
+      <div class="education-container">
+        <p>CAP - Art du Bijou et du Joyau</p>
+        <p>2016 - 2017  • Toulouse</p>
+      </div>
+
+    </div>
+    
+    
+    <div class="experiences" id="experiences">
+      
+      <h3>EXPÉRIENCES</h3>
+      
+      <div class="experience-container">
+        <p>Joaillière </p>
+        <p>Bijouterie Kojayan • Montpellier • 2021 - 2022</p>
+        <p>Création et réparation de bijoux. </p>
+      </div>
+      <div class="experience-container">
+        <p>Joaillière (création d’entreprise)</p>
+        <p>Faventine Joaillerie • Montpellier • 2018 - 2020</p>
+        <a target="_blank" class="website" href="https://www.faventine-joaillerie.com">https://www.faventine-joaillerie.com</a>
+        <p>Création de mon auto-entreprise de vente de bijoux à travers un e-commerce.</p>
+      </div>
+      <div class="experience-container">
+        <p>Joaillière </p>
+        <p>Maison Clozeau • Gallargues-le-Montueux • 2018 - 2020</p>
+        <p>Création et réparation de bijoux.</p>
+      </div>
+      <div class="experience-container">
+        <p>Voyage en Australie</p>
+        <p>2016 - 2017 (Sydney, Brisbane, Melbourne, Kangaroo Island, Cairns, Camberra)</p>
+        <p>Grâce au Working Holiday Visa, j’ai eu la chance de découvrir l’Australie durant une année.</p>
+      </div>
+      
+    </div>
+    
+    
+  </div>
   
-  <div class="experiences" id="experiences">
-
-    <h3>EXPÉRIENCES</h3>
-
-    <div class="experience-container">
-      <p>Joaillière </p>
-      <p>Bijouterie Kojayan • Montpellier • 2021 - 2022</p>
-      <p>Création et réparation de bijoux. </p>
-    </div>
-    <div class="experience-container">
-      <p>Joaillière (création d’entreprise)</p>
-      <p>Faventine Joaillerie • Montpellier • 2018 - 2020</p>
-      <a target="_blank" class="website" href="https://www.faventine-joaillerie.com">https://www.faventine-joaillerie.com</a>
-      <p>Création de mon auto-entreprise de vente de bijoux à travers un e-commerce.</p>
-    </div>
-    <div class="experience-container">
-      <p>Joaillière </p>
-      <p>Maison Clozeau • Gallargues-le-Montueux • 2018 - 2020</p>
-      <p>Création et réparation de bijoux.</p>
-    </div>
-    <div class="experience-container">
-      <p>Voyage en Australie</p>
-      <p>2016 - 2017 (Sydney, Brisbane, Melbourne, Kangaroo Island, Cairns, Camberra)</p>
-      <p>Grâce au Working Holiday Visa, j’ai eu la chance de découvrir l’Australie durant une année.</p>
-    </div>
-
-  </div>
-
-
-  <div class="education" id="education">
-
-    <h3>FORMATIONS</h3>
-    <div class="education-container">
-      <p>Bac +3 - Concepteur Développeur d’Applications <span>(en cours)</span></p>
-      <p>2023  • CESI</p>
-    </div>
-
-    <div class="education-container">
-      <p>Bac +2 - Développeur Full stack Web et Web Mobile <span>(en cours)</span></p>
-      <p>2022 - 2023  • Digital Campus Live</p>
-    </div>
-
-    <div class="education-container">
-      <p>Licence - Diplôme universitaire de Gemmologie de Laboratoire</p>
-      <p>2016 - 2017  • Université de Nantes</p>
-    </div>
-
-    <div class="education-container">
-      <p>BTS - Diplôme de Gemmologue</p>
-      <p>2016 - 2017  • Institut National de Gemmologie (ING) - Lyon</p>
-    </div>
-
-    <div class="education-container">
-      <p>Formation de Sertissage</p>
-      <p>2016 - 2017  • Ecole du Louvre - Paris</p>
-    </div>
-
-    <div class="education-container">
-      <p>CAP - Art du Bijou et du Joyau</p>
-      <p>2016 - 2017  • Toulouse</p>
-    </div>
-
-  </div>
-
-
   <footer>
-
+    
     <p>Merci de votre visite :]</p>
     <div class="icons">
       <a href="https://github.com/Manouzze"><img src="static/icons/git.png" class="github" alt="github"></a>
       <a href="https://www.linkedin.com/in/manon-thiebaut/"><img src="static/icons/linkedin.png" class="linkedin" alt="linkedin"></a>
     </div>
     <p>manoon.thiebaut@gmail.com</p>
-
+    
   </footer>
 
-
+</div>
+  
 </body>
 </html>
