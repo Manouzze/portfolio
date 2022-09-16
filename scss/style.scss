@@ -36,7 +36,7 @@ a {
 body {
   background-color: #001322;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0px;
   // background-size: contain;
   background-image: url("../static/images/base3.jpg");
@@ -72,22 +72,21 @@ body {
             font-size: 30px;
             letter-spacing: 5px;
           }
-          p{
+          p {
             font-size: 16px;
             letter-spacing: 1px;
           }
         }
-        .description{
+        .description {
           line-height: 25px;
           background-image: url("../static/images/quot.png");
           background-repeat: no-repeat;
           background-size: 15%;
           background-position: right;
           text-align: center;
-          .current-topic{
-            margin-top: 30px ;
+          .current-topic {
+            margin-top: 30px;
           }
-
         }
       }
     }
@@ -141,7 +140,6 @@ span {
 }
 
 .skill {
-
   .title-back-end {
     display: flex;
     align-items: center;
@@ -157,7 +155,7 @@ span {
     gap: 7px;
 
     p {
-      background-color: #1c1c1c;
+      background-color: rgba(255, 255, 255, 0.06);
       color: $blue;
       text-transform: capitalize;
       padding: 5px;
@@ -169,11 +167,9 @@ span {
       }
     }
   }
-  
-  
+
   .back-end,
   .front-end {
-
     display: flex;
     margin-bottom: 50px;
     gap: 50px;
@@ -182,7 +178,6 @@ span {
     .html-css,
     .js {
       flex: 1;
-      
     }
   }
 }
@@ -216,7 +211,6 @@ span {
       }
 
       .text-container {
- 
         padding: 0 10px 10px 10px;
         color: #000000;
         text-align: left;
@@ -310,16 +304,14 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  .container-background{
-    header{
+  .container-background {
+    header {
       width: 100%;
     }
-    .block-right{
+    .block-right {
       width: 100% !important;
-    margin-right: 0px !important;
-
+      margin-right: 0px !important;
     }
-
   }
   body {
     padding: 20px;
