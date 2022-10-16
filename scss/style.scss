@@ -146,39 +146,57 @@ span {
     figure {
       max-width: 18px;
       margin: 0 0 0 7px;
+      /*animation-name: fade;
+      animation-delay: 1s;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;*/
+      animation: battement 0.9s infinite alternate cubic-bezier(0.66, 0, 0, 1);
     }
   }
+}
+/*@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}*/
+@keyframes battement {
+  to {
+    transform: scale(1.3);
+  }
+}
 
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
 
-    p {
-      background-color: rgba(255, 255, 255, 0.06);
-      color: $blue;
-      text-transform: capitalize;
-      padding: 5px;
-      border-radius: 6px;
-      border: solid 1px $blue;
-      margin: 0;
-      &.uppercase {
-        text-transform: uppercase;
-      }
+  p {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: $blue;
+    text-transform: capitalize;
+    padding: 5px;
+    border-radius: 6px;
+    border: solid 1px $blue;
+    margin: 0;
+    &.uppercase {
+      text-transform: uppercase;
     }
   }
+}
 
-  .back-end,
-  .front-end {
-    display: flex;
-    margin-bottom: 50px;
-    gap: 50px;
-    .python-DB,
-    .django,
-    .html-css,
-    .js {
-      flex: 1;
-    }
+.back-end,
+.front-end {
+  display: flex;
+  margin-bottom: 50px;
+  gap: 50px;
+  .python-DB,
+  .django,
+  .html-css,
+  .js {
+    flex: 1;
   }
 }
 

@@ -129,15 +129,40 @@ span {
   align-items: center;
 }
 .skill .title-back-end figure {
-  max-width: 30px;
+  max-width: 18px;
   margin: 0 0 0 7px;
+  /*animation-name: fade;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;*/
+  -webkit-animation: battement 0.9s infinite alternate cubic-bezier(0.66, 0, 0, 1);
+          animation: battement 0.9s infinite alternate cubic-bezier(0.66, 0, 0, 1);
 }
-.skill .skills-container {
+
+/*@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}*/
+@-webkit-keyframes battement {
+  to {
+    transform: scale(1.3);
+  }
+}
+@keyframes battement {
+  to {
+    transform: scale(1.3);
+  }
+}
+.skills-container {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
 }
-.skill .skills-container p {
+.skills-container p {
   background-color: rgba(255, 255, 255, 0.06);
   color: #01b18c;
   text-transform: capitalize;
@@ -146,23 +171,24 @@ span {
   border: solid 1px #01b18c;
   margin: 0;
 }
-.skill .skills-container p.uppercase {
+.skills-container p.uppercase {
   text-transform: uppercase;
 }
-.skill .back-end,
-.skill .front-end {
+
+.back-end,
+.front-end {
   display: flex;
   margin-bottom: 50px;
   gap: 50px;
 }
-.skill .back-end .python-DB,
-.skill .back-end .django,
-.skill .back-end .html-css,
-.skill .back-end .js,
-.skill .front-end .python-DB,
-.skill .front-end .django,
-.skill .front-end .html-css,
-.skill .front-end .js {
+.back-end .python-DB,
+.back-end .django,
+.back-end .html-css,
+.back-end .js,
+.front-end .python-DB,
+.front-end .django,
+.front-end .html-css,
+.front-end .js {
   flex: 1;
 }
 
