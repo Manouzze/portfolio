@@ -52,18 +52,18 @@ body .container-background .block-right {
   margin-right: 160px;
 }
 body .container-background .block-right .profile {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 body .container-background .block-right .profile .name {
   text-align: center;
   margin-bottom: 60px;
 }
 body .container-background .block-right .profile .name h1 {
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 5px;
 }
 body .container-background .block-right .profile .name p {
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 body .container-background .block-right .profile .description {
