@@ -83,9 +83,10 @@ body .container-background .icons-stack {
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+  gap: 5px;
 }
 body .container-background .icons-stack img {
-  width: 54px;
+  width: 50px;
 }
 body .container-content {
   max-width: 1000px;
@@ -271,6 +272,10 @@ span {
 .education-container .website {
   font-size: 14px;
   font-style: italic;
+  color: #01b18c;
+}
+.experience-container .learn-stack,
+.education-container .learn-stack {
   color: #01b18c;
 }
 

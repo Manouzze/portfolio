@@ -96,8 +96,9 @@ body {
       justify-content: center;
       align-items: center;
       margin-top: 15px;
+      gap: 5px;
       img {
-        width: 54px;
+        width: 50px;
       }
     }
   }
@@ -283,6 +284,9 @@ span {
   .website {
     font-size: 14px;
     font-style: italic;
+    color: $blue;
+  }
+  .learn-stack {
     color: $blue;
   }
 }
