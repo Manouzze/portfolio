@@ -8,7 +8,7 @@
 
 /* ------------- VARIABLES ------------- */
 $purple: #7344f8;
-$orange: #ff981f;
+$rose: #ffddd2;
 $blue: #01b18c;
 
 img {
@@ -83,22 +83,57 @@ body {
           background-repeat: no-repeat;
           background-size: 15%;
           background-position: right;
-          text-align: center;
-          .current-topic {
-            margin-top: 30px;
+          text-align: left;
+        }
+        .container-cyber #thm_badge {
+          margin-bottom: 30px;
+          .profile-tryhackme {
+            // width: auto;
+            margin-top: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          div:nth-child(2) {
+            width: auto !important;
           }
         }
       }
     }
-    .icons-stack {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 15px;
-      gap: 5px;
+  }
+
+  .intro,
+  .topic {
+    width: 55%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    // .intro-2 {
+    //   margin-top: 10px;
+    // }
+  }
+  .topic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgba(1, 177, 140, 0.1);
+    .topics-current {
+      width: 30%;
+      height: 130px;
       img {
-        width: 50px;
+        width: auto;
+        svg {
+          color: #ffffff;
+        }
+      }
+      h3 {
+        margin-bottom: 10px;
+        color: $rose;
       }
     }
   }
@@ -106,7 +141,7 @@ body {
   .container-content {
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 20px 50px;
     line-height: 20px;
   }
@@ -176,11 +211,11 @@ span {
 
   p {
     background-color: rgba(255, 255, 255, 0.06);
-    color: $blue;
+    color: $rose;
     text-transform: capitalize;
     padding: 5px;
     border-radius: 6px;
-    border: solid 1px $blue;
+    border: solid 1px $rose;
     margin: 0;
     &.uppercase {
       text-transform: uppercase;
@@ -287,7 +322,7 @@ span {
     color: $blue;
   }
   .learn-stack {
-    color: $blue;
+    color: $rose;
   }
 }
 
@@ -317,10 +352,21 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-  .skill {
-    .back-end,
-    .front-end {
+  body {
+    .skill {
+      .back-end,
+      .front-end {
+        flex-direction: column;
+      }
+    }
+    .topic {
       flex-direction: column;
+      .topics-current {
+        min-width: 180px;
+        margin-bottom: 10px;
+        height: auto;
+        padding-bottom: 10px;
+      }
     }
   }
 }
